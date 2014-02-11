@@ -1,0 +1,41 @@
+@CHARSET "ISO-8859-1";
+
+body
+{
+	margin-bottom:50px;
+}
+
+a img 
+{
+	display:none;
+}
+
+h1
+{
+	position:relative;
+	top:0px;
+}
+
+nav
+{
+	position:relative;
+	left:0px;
+	right:0px;
+	top:20px;
+	margin-bottom:30px; /* Pour afficher correctement les éléments qui suivent le menu */
+	border:1px solid black;
+	background-color:rgb(48,52,133);
+}
+
+nav ul li
+{
+	display:list-item;
+	list-style-type:none;
+	text-align:center;
+}
+
+footer
+{
+	display:none;
+}
+

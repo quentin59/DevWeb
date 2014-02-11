@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  
+  <servlet>
+    <servlet-name>Accueil</servlet-name>
+    <servlet-class>hei.devweb.controllers.AccueilServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListeEquipes</servlet-name>
+    <servlet-class>hei.devweb.controllers.ListeEquipesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListeMatchs</servlet-name>
+    <servlet-class>hei.devweb.controllers.ListeMatchsServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>ListeStades</servlet-name>
+    <servlet-class>hei.devweb.controllers.ListeStadesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ListeJoueurs</servlet-name>
+    <servlet-class>hei.devweb.controllers.ListeJoueursServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DetailMatch</servlet-name>
+    <servlet-class>hei.devweb.controllers.DetailMatchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AjouterJoueur</servlet-name>
+    <servlet-class>hei.devweb.controllers.AjouterJoueurServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SupprimerJoueur</servlet-name>
+    <servlet-class>hei.devweb.controllers.SupprimerJoueurServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CompleterMatch</servlet-name>
+    <servlet-class>hei.devweb.controllers.CompleterMatchServlet</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+    <servlet-name>Accueil</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>ListeEquipes</servlet-name>
+    <url-pattern>/equipes</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListeMatchs</servlet-name>
+    <url-pattern>/matchs</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListeStades</servlet-name>
+    <url-pattern>/stades</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListeJoueurs</servlet-name>
+    <url-pattern>/joueurs</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DetailMatch</servlet-name>
+    <url-pattern>/detailmatch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AjouterJoueur</servlet-name>
+    <url-pattern>/ajouterjoueur</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SupprimerJoueur</servlet-name>
+    <url-pattern>/supprimerjoueur</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CompleterMatch</servlet-name>
+    <url-pattern>/completermatch</url-pattern>
+  </servlet-mapping>
+
+  
+  <welcome-file-list>
+    <welcome-file>index</welcome-file>
+  </welcome-file-list>
+</web-app>

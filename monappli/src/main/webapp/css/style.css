@@ -1,0 +1,283 @@
+@CHARSET "ISO-8859-1";
+
+/* Body */
+
+body
+{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:14px;
+	background:rgb(220,220,255);
+	margin-bottom:50px; /* Place du footer */
+}
+
+
+/* Positionnement du header */
+
+header > a > img
+{
+	height:160px;
+	width:140px;
+}
+
+header h1, header img
+{
+	display:inline;
+	vertical-align:bottom;
+}
+
+h1
+{
+	position:relative;
+	font-family:'book antiqua','cambria','calibri';
+	font-size:35px;
+	color:rgb(48,52,133);
+	left:20px;
+	bottom:50px;
+}
+
+h3
+{
+	font-size:25px;
+	text-align:center;
+}
+
+h4
+{
+	font-size:18px;
+	text-align:center;
+}
+
+
+/* Positionnement du menu */
+
+nav
+{
+	position:relative;
+	left:0px;
+	right:0px;
+	top:20px;
+	margin-bottom:30px; /* Pour afficher correctement les éléments qui suivent le menu */
+	border:1px solid black;
+	background-color:rgb(48,52,133);
+}
+
+nav>ul>li
+{
+	display:inline;
+	margin-right:20px;
+	padding:3px 15px;
+	border:1px solid white;
+	border-radius:5px;
+}
+
+.pageactive, nav ul li:hover
+{
+	background-color:white;
+}
+
+/* Positionnement du footer */
+
+footer
+{
+	position:fixed;
+	bottom:-11px;
+	text-align:center;
+	right:0px;
+	left:0px;
+}
+
+footer>p
+{
+	font-size:0.75em;
+	color:rgb(112,85,37);
+	border-top:1px solid rgb(112,85,37);
+	background:rgb(246,240,140);
+}
+
+/* Positionnement du contenu sur l'index */
+
+article.introduction
+{
+	margin-right:10px;
+	margin-left:10px;
+}
+
+/* Liens */
+ 
+ a
+{
+	text-decoration:none;
+}
+
+ nav ul li a
+ {
+ 	text-decoration:none;
+ 	color:white;
+ }
+ 
+ nav ul li.pageactive a, nav ul li a:hover, nav ul li:hover a
+ {
+ 	color:rgb(48,52,133);
+ }
+ 
+ 
+ /* Tableau des équipes */
+ 
+ table.equipe, table.stade
+ {
+ 	border-collapse:collapse; 	
+ 	border:1px solid black;
+ }
+ 
+ table td,  table th
+ {
+ 	border:1px solid black;
+ 	padding:2px;
+ 	text-align:center;
+ }
+ 
+ table.equipe
+ {
+ 	display:inline-block;
+ }
+ 
+ table.joueurs
+ {
+ 	position:relative;
+ 	top:30px;
+ 	border-collapse:collapse; 	
+ 	border:1px solid black;
+ }
+ 
+ /* Pour avoir les tableaux équipes de la même dimension */
+ 
+table.equipe td:first-child
+{
+	height:60px;
+	width:80px;
+}
+
+table.equipe td:last-child
+{
+	width:100px;
+}
+
+
+/* Placement du formulaire d'ajout de joueurs */
+
+.valider
+{
+	position:relative;
+  	padding: 4px 12px;
+  	cursor: pointer;
+  	background-color: rgb(240,240,240);
+	border: 1px solid rgb(150,150,150);
+	border-radius:5px;
+}
+
+.valider:hover
+{
+	background: rgb(220,220,220)
+}
+
+form#ajoutjoueur
+{
+	position:absolute;
+	top:300px;
+	border:1px solid black;
+	background: rgb(240,240,240);
+	padding:10px;
+	width:300px;
+	display:none;
+	border-radius:15px;
+}
+
+form#ajoutjoueur > input
+{
+	margin:3px;
+	border:1px solid rgb(200,200,200);
+	border-radius:2px;
+	padding:3px;
+}
+
+form#ajoutjoueur > input.boutonValider
+{
+	position:relative;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top:10px;
+    font-size:16px;
+}
+
+form#ajoutjoueur > input.boutonValider:hover
+{
+	background: rgb(220,220,220);
+	cursor:pointer;
+}
+
+#erreurForm,#erreurForm2, .incompletForm
+{
+	display:none;
+	color:red;
+}
+
+
+/* Page matchs */
+
+
+table.listeMatchs
+{
+	text-align:center;
+	border-collapse:collapse;
+}
+
+table.listeMatchs td, table.listeMatchs tr
+{
+	border:1px solid rgb(200,200,200);
+	padding:10px 30px;
+}
+
+form#matchForm
+{
+	position:relative;
+	top:20px;
+	border:1px solid black;
+	background: rgb(240,240,240);
+	padding:10px;
+	width:500px;
+	border-radius:15px;
+	margin-bottom:30px;
+	display:none;
+}
+
+article#articlematch
+{
+	position:relative;
+	top:20px;
+	border: 1px solid black;
+	width:300px;
+	display:none;
+}
+
+select
+{
+	background:rgb(220,220,255);
+}
+
+form#selectionEquipeForm
+{
+	margin-bottom:25px;
+}
+
+.completermatch:hover, .supprimer, .detailmatch:hover
+{
+	cursor:pointer;
+}
+
+
+table.stade,img#emplacementstade
+{
+	display:inline-block;
+	vertical-align:middle;
+}
